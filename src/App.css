@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* google font import link */
+/* font-family: 'Lobster', cursive;
+font-family: 'Roboto Slab', serif; 
+font-family: 'Noto Sans', serif;
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+:root{
+  --color-bg:#00000077;
+  --color-bg-variant:#2c2c6c;
+  --color-primary:#4db5ff;
+  --color-primary-variant:rgba(77, 181,255,0.4);
+  --color-white:#fff;
+  --color-light:rgba(255, 255, 255, 0.744);
+
+  --transition: all 400ms ease;
+  --container-width-lg:75%;
+  --container-width-md:86%;
+  --container-width-sm:90%;
+  --box-shadow: inset .1px .2px 5px rgb(78, 76, 76),
+  inset -.1px -.2px 5px rgb(96, 95, 95);
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+body{
+  font-family: 'Roboto Slab';
+  font-weight:'';
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  /* line-height: 1.5; */
+  /* height:'100vh';
+     display:flex;
+     justify-content:center;
+     align-items:center;	
+ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*------- GENERAL STYLES -------*/
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
+h1{
+  font-size: 2.5rem;
+}
+.text-light{
+  color: var(--color-white);
+}
+a{
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+a:hover{
+  color: var(--color-light);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) {  }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {  }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {  }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

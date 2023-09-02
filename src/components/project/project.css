@@ -1,0 +1,241 @@
+.project{
+    position: relative;
+}
+.project::before {
+    content: "";
+    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+    opacity: 0.85;
+    position: absolute;
+    border-radius: 1rem;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s ease-in-out;
+  }
+  .project:hover::before {
+    height: 98%;
+    /* width: 100%; */
+  }
+  .project-title{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 11rem;
+    top: 8rem;
+    text-align: center;
+    padding: 1rem;
+    width: 22rem;
+    height: 12rem;
+    border-radius: 1rem;
+    transition: .4s ease-in;
+    z-index: 1;
+    opacity: 0;
+  }
+
+.project:hover .project-title{
+    top: 6rem;
+    opacity: 1;
+}
+
+/* general style */
+.project img{
+  width: 22rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.project h4{
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.project a{
+  color: #2bff00;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  transition: 3s ease-in-out;
+}
+.project a:hover{
+  color: #2bff00e8;
+  text-decoration: underline;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) {  }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+  .project-title{
+    top: 10rem;
+    left: 13rem;
+    text-align: center;
+    padding: .5rem;
+    width: 25rem;
+    height: 10rem;
+    border-radius: .5rem;
+    transition: .4s ease-in;
+    z-index: 1;
+    opacity: 0;
+  }
+.project:hover .project-title{
+    top: 6rem;
+    opacity: 1;
+}
+.project::before {
+  border-radius: .5rem;
+}
+/* general style */
+.project img{
+  width: 27rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+.project h4{
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: .6rem;
+  margin-top: 1rem;
+}
+.project a{
+  color: #2bff00;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  transition: 3s ease-in-out;
+}
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+  .project-title{
+    top: 10rem;
+    left: 12rem;
+    text-align: center;
+    padding: .5rem;
+    width: 25rem;
+    height: 10rem;
+    border-radius: .5rem;
+    transition: .4s ease-in;
+    z-index: 1;
+    opacity: 0;
+  }
+.project:hover .project-title{
+    top: 6rem;
+    opacity: 1;
+}
+.project::before {
+  border-radius: .5rem;
+}
+/* general style */
+.project img{
+  width: 25rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+.project h4{
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: .6rem;
+  margin-top: 1rem;
+}
+.project a{
+  color: #2bff00;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  transition: 3s ease-in-out;
+}
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { 
+  .project-title{
+    top: 6rem;
+    left: 7rem;
+    text-align: center;
+    padding: .5rem;
+    width: 15rem;
+    height: 7rem;
+    border-radius: .5rem;
+    transition: .4s ease-in;
+    z-index: 1;
+    opacity: 0;
+  }
+
+.project:hover .project-title{
+    top: 3.7rem;
+    opacity: 1;
+}
+.project::before {
+  border-radius: .5rem;
+}
+/* general style */
+.project img{
+  width: 15rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+.project h4{
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: .6rem;
+  margin-top: 1rem;
+}
+.project a{
+  color: #2bff00;
+  font-weight: lighter;
+  font-size: .9rem;
+  transition: 3s ease-in-out;
+}
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  {
+  .project-title{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5rem;
+    left: 6rem;
+    text-align: center;
+    padding: .5rem;
+    width: 12rem;
+    height: 6rem;
+    border-radius: .5rem;
+    transition: .4s ease-in;
+    z-index: 1;
+    opacity: 0;
+  }
+
+.project:hover .project-title{
+    top: 3rem;
+    opacity: 1;
+}
+.project::before {
+  border-radius: .5rem;
+}
+/* general style */
+.project img{
+  width: 12rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+.project h4{
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: .6rem;
+  margin-top: 1rem;
+}
+.project a{
+  color: #2bff00;
+  font-weight: lighter;
+  font-size: .9rem;
+  transition: 3s ease-in-out;
+}
+ }

@@ -1,0 +1,159 @@
+.projects-container{
+    height: auto;
+    width: 100%;
+    background-image: url('../../images/movie.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1rem;
+}
+.projects-container::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.641);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: .01rem;
+    z-index: -1;
+    
+}
+.projects-title{
+    text-align: center;
+    padding-top: 1rem;
+}
+.projects-title h1{
+    margin-bottom: .4rem;
+    font-size: 2.3rem;
+}
+.down-icon{
+    font-size: 1.5rem;
+    margin-top: .3rem;
+}
+/* projects section design */
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding:1rem 4rem;
+}
+.more-projects{
+    border: 1px solid rgba(255, 255, 255, 0.571);
+    padding: 1rem;
+    margin: 4rem;
+    text-align: center;
+}
+.more-projects span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github{
+    width: 2rem;
+    opacity: .8;
+}
+.github:hover{
+    opacity: 1;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) {  }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {  }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .projects-title h1{
+        margin-bottom: .4rem;
+        font-size: 2.2rem;
+    }
+    .projects-title p{
+        font-size: 1rem;
+    }
+    /* projects section design */
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding:1rem 4rem;
+    }
+    .more-projects{
+        border: 1px solid rgba(255, 255, 255, 0.571);
+        padding: .8rem;
+        margin: 1.4rem;
+        text-align: center;
+    }
+    .more-projects span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .projects-title h1{
+        margin-bottom: .4rem;
+        font-size: 2.2rem;
+    }
+    .projects-title p{
+        font-size: 1rem;
+    }
+    /* projects section design */
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding:1rem 4rem;
+    }
+    .more-projects{
+        border: 1px solid rgba(255, 255, 255, 0.571);
+        padding: .8rem;
+        margin: 1.4rem;
+        text-align: center;
+    }
+    .more-projects span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { 
+    .projects-title h1{
+        margin-bottom: .4rem;
+        font-size: 1.9rem;
+    }
+    .projects-title p{
+        font-size: .9rem;
+    }
+    /* projects section design */
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding:1rem 2.4rem;
+    }
+    .more-projects{
+        border: 1px solid rgba(255, 255, 255, 0.571);
+        padding: .5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+    .more-projects span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

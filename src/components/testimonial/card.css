@@ -1,0 +1,209 @@
+.testimonial-card{
+    padding: 1rem;
+    display: flex;
+    box-shadow: 3px 3px 2px rgb(193, 193, 193),
+     -0px 0 2px rgb(187, 187, 187);
+     margin: 1rem;
+     background-color: rgba(8, 8, 8, 0.145);
+     width: 35rem;
+     border-radius: 5px;
+}
+.left{
+    margin-top: -.8rem;
+}
+.quote-icon{
+    font-size: 1.5rem;
+}
+.left img{
+    width: 15rem;
+    height:15rem;
+}
+.right{
+    padding: 1rem;
+    line-height: 2.5rem;
+}
+.right h3{
+    opacity: .9;
+}
+.right p{
+    opacity: 1;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: normal;
+}
+.right span{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) {  }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .testimonial-card{
+        padding: .5rem;
+        margin: .5rem;
+        width: 28rem;
+        height: 15rem;
+    }
+    .left{
+        margin-top: -.8rem;
+    }
+    .quote-icon{
+        font-size: 1.2rem;
+    }
+    .left img{
+        width:8rem;
+        height:10rem;
+    }
+    .right{
+        padding: .5rem 1rem;
+        line-height: 2.5rem;
+    }
+    .right h2{
+        font-size: 1.5rem;
+    }
+    .right h3{
+        opacity: .9;
+        font-size: 1rem;
+    }
+    .right p{
+        opacity: 1;
+        font-size: .8rem;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: normal;
+    }
+    .right span{
+        font-size: .8rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .testimonial-card{
+        padding: .5rem;
+        margin: .5rem;
+        width: 25rem;
+        height: 14rem;
+    }
+    .left{
+        margin-top: -.8rem;
+    }
+    .quote-icon{
+        font-size: 1.2rem;
+    }
+    .left img{
+        width:8rem;
+        height:10rem;
+    }
+    .right{
+        padding: .5rem 1rem;
+        line-height: 2.5rem;
+    }
+    .right h2{
+        font-size: 1.5rem;
+    }
+    .right h3{
+        opacity: .9;
+        font-size: 1rem;
+    }
+    .right p{
+        opacity: 1;
+        font-size: .8rem;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: normal;
+    }
+    .right span{
+        font-size: .8rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .testimonial-card{
+        padding: .5rem;
+         margin: .5rem;
+         width: 21rem;
+         height: 11rem;
+    }
+    .left{
+        margin-top: -1rem;
+    }
+    .quote-icon{
+        font-size: 1.2rem;
+    }
+    .left img{
+        width:6rem;
+        height:8rem;
+    }
+    .right{
+        padding: .8rem;
+        line-height: 1.8rem;
+    }
+    .right h2{
+        font-size: 1.3rem;
+    }
+    .right h3{
+        opacity: .9;
+        font-size: .9rem;
+    }
+    .right p{
+        opacity: 1;
+        font-size: .8rem;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: .8rem;
+        margin-bottom: -.2rem;
+    }
+    .right span{
+        font-size: .7rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { 
+    .testimonial-card{
+        padding: .5rem;
+         margin: .5rem;
+         width: 15rem;
+         height: 12rem;
+    }
+    .left{
+        margin-top: -.8rem;
+    }
+    .quote-icon{
+        font-size: 1.2rem;
+    }
+    .left img{
+        width:4rem;
+        height:6rem;
+    }
+    .right{
+        padding: .5rem;
+        line-height: 1.5rem;
+    }
+    .right h2{
+        font-size: 1.2rem;
+    }
+    .right h3{
+        opacity: .9;
+        font-size: .8rem;
+    }
+    .right p{
+        opacity: 1;
+        font-size: .7rem;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: normal;
+    }
+    .right span{
+        font-size: .5rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+}

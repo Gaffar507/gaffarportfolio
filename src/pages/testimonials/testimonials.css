@@ -1,0 +1,145 @@
+.testimonials-container{
+    background: rgb(143, 142, 142);
+    height: 93vh;
+}
+.testimonials-container h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.8rem;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.cards{
+    width: 35rem;
+    height: 18rem;
+    background-color: rgba(0, 136, 255, 0.492);
+    border-radius: 5px;
+}
+.card{
+    width: 100%;
+    transition: all .4s ease-in-out;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {scale: 0;}
+    to {scale: 1}
+  }
+.change-btn{
+    margin-top: 3rem;
+}
+.btn{
+    color: white;
+    margin: 0 .6rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    color: blue;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) {  }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .testimonials-container h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .cards{
+        width: 28rem;
+        height: 15rem;
+        position: relative;
+    }
+    .card{
+        position: absolute;
+        top: .4rem;
+        left: .4rem;
+    }
+    .change-btn{
+        margin-top: 1.9rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .testimonials-container h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .cards{
+        width: 25rem;
+        height: 14rem;
+        position: relative;
+    }
+    .card{
+        position: absolute;
+        top: .4rem;
+        left: .4rem;
+    }
+    .change-btn{
+        margin-top: 1.9rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .testimonials-container h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .cards{
+        width: 21rem;
+        height: 11rem;
+        position: relative;
+    }
+    .card{
+        position: absolute;
+        top: .4rem;
+        left: .4rem;
+    }
+    .change-btn{
+        margin-top: 1.9rem;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { 
+    .testimonials-container h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .cards{
+        width: 15rem;
+        height: 12rem;
+        position: relative;
+    }
+    .card{
+        position: absolute;
+        top: .4rem;
+        left: .4rem;
+    }
+    .change-btn{
+        margin-top: 1.9rem;
+    }
+}

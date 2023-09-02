@@ -1,0 +1,584 @@
+.skills-container{
+    text-align: center;
+    z-index: 1;
+    height: 93vh;
+    /* background: linear-gradient(50.21deg, #3836aaaf -5.91%, #bd2f90b5 111.58%); */
+}
+.skill-title{
+    padding: 1rem;
+    line-height: 2.5rem;
+}
+.skill-title> h1{
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+.down-arrow{
+    font-size: 1.7rem;
+    margin-top: -2rem;
+}
+
+/* skill design */
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-circle{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+    top: 1rem;
+    left: 29.8rem;
+    animation: rotate-img 4s normal forwards ;
+}
+@keyframes rotate-img {
+    0% {
+       transform: rotate(0deg);
+    }
+    65%{
+        transform: rotate(375deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.yellow-circle{
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+    background-color: rgba(255, 140, 0, 0.532);
+    top: 7rem;
+    left: 38rem;
+    z-index: 0;
+}
+.blue-circle{
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+    background-color: rgba(0, 17, 255, 0.603);
+    z-index: -9;
+    top: 0rem;
+    left: 38rem;
+}
+.image-circle{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-circle>img{
+    width: 4rem;
+    border-radius: 50%;
+}
+.main-circle>*{
+    position: absolute;
+}
+.main-circle>:nth-child(1){
+    top: -2.2rem;
+    left: 7rem;
+}
+.main-circle>:nth-child(2){
+    top: 2.5rem;
+    left: -1rem;
+}
+.main-circle>:nth-child(3){
+    top: 2rem;
+    right: -.5rem;
+}
+.main-circle>:nth-child(4){
+    top: 12rem;
+    right: -1rem;
+}
+.main-circle>:nth-child(5){
+    top: 12rem;
+    left: -1rem;
+}
+.main-circle>:nth-child(5)>img{
+    width: 4.8rem;
+    border-radius: 100%;
+}
+.main-circle>:nth-child(6){
+    top: 17rem;
+    left: 7.2rem;
+}
+.main-circle>:nth-child(7){
+    top: 7.4rem;
+    left: 7.4rem;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { 
+
+ }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) {
+    .skills-container{
+        height: 100vh;
+    }
+    /* .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .skill-title{
+        line-height: 2.3rem;
+    }
+    .skill-title> h1{
+        font-size: 2rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        margin-left: -1.6rem;
+    }
+    .main-circle{
+        position: absolute;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+        top: 1rem;
+        left: 20rem;
+    }
+    .yellow-circle{
+        position: absolute;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 100%;
+        background-color: rgba(255, 140, 0, 0.532);
+        top: 7rem;
+        left: 27rem;
+        z-index: 0;
+    }
+    .blue-circle{
+        width: 14rem;
+        height: 14rem;
+        top: 0rem;
+        left: 27rem;
+    }
+    .image-circle{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-circle>img{
+        width: 3rem;
+    }
+    .main-circle>:nth-child(1){
+        top: -2.2rem;
+        left: 8rem;
+    }
+    .main-circle>:nth-child(2){
+        top: 2.7rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(3){
+        top: 2.6rem;
+        right: -.5rem;
+    }
+    .main-circle>:nth-child(4){
+        top: 12rem;
+        right: -.8rem;
+    }
+    .main-circle>:nth-child(5){
+        top: 12rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(5)>img{
+        width: 3.8rem;
+        border-radius: 100%;
+    }
+    .main-circle>:nth-child(6){
+        top: 17rem;
+        left: 7rem;
+    }
+    .main-circle>:nth-child(7){
+        top: 7.3rem;
+        left:7.4rem;
+    }
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .skills-container{
+        height: 100vh;
+    }
+    /* .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .skill-title{
+        line-height: 2.3rem;
+    }
+    .skill-title> h1{
+        font-size: 2rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        margin-left: -1.6rem;
+    }
+    .main-circle{
+        position: absolute;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+        top: 1rem;
+        left: 15rem;
+    }
+    .yellow-circle{
+        position: absolute;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 100%;
+        background-color: rgba(255, 140, 0, 0.532);
+        top: 7rem;
+        left: 23rem;
+        z-index: 0;
+    }
+    .blue-circle{
+        width: 14rem;
+        height: 14rem;
+        top: 0rem;
+        left: 23rem;
+    }
+    .image-circle{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-circle>img{
+        width: 3rem;
+    }
+    .main-circle>:nth-child(1){
+        top: -2.2rem;
+        left: 8rem;
+    }
+    .main-circle>:nth-child(2){
+        top: 2.7rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(3){
+        top: 2.6rem;
+        right: -.5rem;
+    }
+    .main-circle>:nth-child(4){
+        top: 12rem;
+        right: -.8rem;
+    }
+    .main-circle>:nth-child(5){
+        top: 12rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(5)>img{
+        width: 3.8rem;
+        border-radius: 100%;
+    }
+    .main-circle>:nth-child(6){
+        top: 17rem;
+        left: 7rem;
+    }
+    .main-circle>:nth-child(7){
+        top: 7.3rem;
+        left:7.4rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .skills-container{
+        height: 100vh;
+    }
+    /* .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .skill-title{
+        line-height: 2.3rem;
+    }
+    .skill-title> h1{
+        font-size: 2rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        margin-left: -1.6rem;
+    }
+    .main-circle{
+        position: absolute;
+        width: 17rem;
+        height: 17rem;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+        top: 1rem;
+        left: 7rem;
+    }
+    .yellow-circle{
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 100%;
+        background-color: rgba(255, 140, 0, 0.532);
+        top: 6rem;
+        left: 13rem;
+        z-index: 0;
+    }
+    .blue-circle{
+        width: 13rem;
+        height: 13rem;
+        top: 0rem;
+        left: 13rem;
+    }
+    .image-circle{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-circle>img{
+        width: 3rem;
+    }
+    .main-circle>:nth-child(1){
+        top: -2.2rem;
+        left: 6.5rem;
+    }
+    .main-circle>:nth-child(2){
+        top: 2.5rem;
+        left: -1rem;
+    }
+    .main-circle>:nth-child(3){
+        top: 2.2rem;
+        right: -.5rem;
+    }
+    .main-circle>:nth-child(4){
+        top: 10.2rem;
+        right: -1rem;
+    }
+    .main-circle>:nth-child(5){
+        top: 10.5rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(5)>img{
+        width: 3.8rem;
+        border-radius: 100%;
+    }
+    .main-circle>:nth-child(6){
+        top: 15rem;
+        left: 6.5rem;
+    }
+    .main-circle>:nth-child(7){
+        top: 6.4rem;
+        left:6.5rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { 
+    .skills-container{
+        height: 100vh;
+    }
+    .skill-title{
+        line-height: 2.7rem;
+    }
+    .skill-title> h1{
+        font-size: 2.3rem;
+    }
+    .skill-title h3{
+        font-size: 1.4rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        margin-left: -1.6rem;
+    }
+    /* .skill{
+        padding: 5rem;
+    } */
+    .main-circle{
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+        top: 3rem;
+        left: 5rem;
+    }
+    .yellow-circle{
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        background-color: rgba(255, 140, 0, 0.532);
+        top: 7rem;
+        left: 10rem;
+        z-index: 0;
+    }
+    .blue-circle{
+        width: 10rem;
+        height: 10rem;
+        top: 2rem;
+        left: 10rem;
+    }
+    .image-circle{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-circle>img{
+        width: 3rem;
+    }
+    .main-circle>:nth-child(1){
+        top: -1.8rem;
+        left: 4.3rem;
+    }
+    .main-circle>:nth-child(2){
+        top: 1.8rem;
+        left: -1rem;
+    }
+    .main-circle>:nth-child(3){
+        top: 1.8rem;
+        right: -.9rem;
+    }
+    .main-circle>:nth-child(4){
+        top: 8rem;
+        right: -1rem;
+    }
+    .main-circle>:nth-child(5){
+        top: 7.8rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(5)>img{
+        width: 3.8rem;
+        border-radius: 100%;
+    }
+    .main-circle>:nth-child(6){
+        top: 10.5rem;
+        left: 4.5rem;
+    }
+    .main-circle>:nth-child(7){
+        top: 4.3rem;
+        left:4.4rem;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { 
+    .skills-container{
+        height: 100vh;
+    }
+    .skill-title{
+        line-height: 2.3rem;
+    }
+    .skill-title> h1{
+        font-size: 1.7rem;
+    }
+    .skill-title h3{
+        font-size: 1.1rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        margin-left: -1.6rem;
+    }
+    /* .skill{
+        padding: 5rem;
+    } */
+    .main-circle{
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+        top: 1rem;
+        left: 2rem;
+    }
+    .yellow-circle{
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        background-color: rgba(255, 140, 0, 0.532);
+        top: 5rem;
+        left: 7rem;
+        z-index: 0;
+    }
+    .blue-circle{
+        width: 10rem;
+        height: 10rem;
+        top: 0rem;
+        left: 7rem;
+    }
+    .image-circle{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-circle>img{
+        width: 3rem;
+    }
+    .main-circle>:nth-child(1){
+        top: -1.8rem;
+        left: 4.3rem;
+    }
+    .main-circle>:nth-child(2){
+        top: 1.8rem;
+        left: -1rem;
+    }
+    .main-circle>:nth-child(3){
+        top: 1.8rem;
+        right: -.9rem;
+    }
+    .main-circle>:nth-child(4){
+        top: 8rem;
+        right: -1rem;
+    }
+    .main-circle>:nth-child(5){
+        top: 7.8rem;
+        left: -.6rem;
+    }
+    .main-circle>:nth-child(5)>img{
+        width: 3.8rem;
+        border-radius: 100%;
+    }
+    .main-circle>:nth-child(6){
+        top: 10.5rem;
+        left: 4.5rem;
+    }
+    .main-circle>:nth-child(7){
+        top: 4.3rem;
+        left:4.4rem;
+    }
+}

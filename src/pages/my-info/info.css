@@ -1,0 +1,321 @@
+.info-container{
+    height: 95vh;
+    background-color: rgba(109, 108, 108, 0.839);
+    font-weight: normal;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+.image-container>img{
+    border: 1px solid white;
+    width: 10rem;
+    border-radius: 100%;
+    padding: .2rem;
+    margin-top: 3rem;
+    /* animation: dotted-ani 5s ease-in normal infinite forwards; */
+}
+.title-container{
+    padding:0 5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-arrow{
+    font-size: 1.2rem;
+}
+.icon-fire{
+    color: rgb(255, 106, 0);
+    opacity: 1;
+}
+.icon-hand{
+    color: aqua;
+    opacity: 1;
+}
+.title-sec{
+    line-height: 2rem;
+    padding: .5rem;
+    margin-top: -2rem;
+}
+.title-sec>h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+    color: rgb(34, 255, 0);
+    font-weight: bolder;
+}
+.title-sec>h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.title-sec>article{
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: .8;
+}
+.cv-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: .2rem .3rem;
+    cursor: pointer;
+    transition: .3s ease-in;
+    width: 7.5rem;
+    height: 1.6rem;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: .8rem;
+}
+.cv-btn:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+.cv-btn::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .6s ease-in-out;
+    z-index: -1;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: .8rem;
+}
+.cv-btn:hover::after{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.info-sec{
+    line-height: 2rem;
+    flex-basis: 50%;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+.info-sec h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.info-sec> ul{
+    padding-left: 1rem;
+}
+.info-sec>ul>li:nth-child(1){
+    padding: .1rem;
+}
+
+.info-sec>ul>li{
+    font-weight: normal;
+    opacity: .8;
+    text-indent: -1.5rem;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { 
+    .image-container>img{
+        width: 10rem;
+    }
+    .title-container{
+        padding:1rem;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon-arrow{
+        font-size: 1rem;
+    }
+    .title-sec{
+        line-height: 1.6rem;
+        padding: 0rem;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        font-weight: 100;
+    }
+ }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) {
+
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .info-container{
+        height: auto;
+    }
+    .image-container>img{
+        width: 10rem;
+    }
+    .title-container{
+        padding:1rem;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon-arrow{
+        font-size: 1rem;
+    }
+    .title-sec{
+        line-height: 1.6rem;
+        padding: 0rem;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>h2{
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+        font-weight: 100;
+    }
+    .title-sec>h4{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>article{
+        font-size: .9rem;
+        font-weight: normal;
+        opacity: .8;
+    }
+    .cv-btn{
+        margin-top: 1rem;
+    }
+    .info-sec{
+        line-height: 1.6rem;
+        flex-basis: 50%;
+        padding: .5rem;
+        margin-top: 2rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .info-container{
+        height: auto;
+    }
+    .image-container>img{
+        width: 9rem;
+    }
+    .title-container{
+        padding:1rem 2rem;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .icon-arrow{
+        font-size: 1rem;
+    }
+    .title-sec{
+        line-height: 1.6rem;
+        padding: .5rem;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>h2{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        font-weight: 100;
+    }
+    .title-sec>h4{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>article{
+        font-size: .9rem;
+        font-weight: normal;
+        opacity: .8;
+    }
+    .cv-btn{
+        margin-top: 2rem;
+    }
+    .info-sec{
+        line-height: 1.6rem;
+        flex-basis: 50%;
+        padding: .5rem;
+        margin-top: 2rem;
+    }
+    .info-sec h4{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .info-sec> ul{
+        padding-left: 1rem;
+    }
+    .info-sec>ul>li:nth-child(1){
+        padding: .1rem;
+    }
+    .info-sec>ul>li{
+        font-weight: normal;
+        opacity: .8;
+        text-indent: -1.5rem;
+        font-size: .9;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .image-container>img{
+        width: 8rem;
+    }
+    .title-container{
+        padding:1rem;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .icon-arrow{
+        font-size: 1rem;
+    }
+    .title-sec{
+        line-height: 1.7rem;
+        padding: .8rem;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>h2{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        font-weight: 100;
+    }
+    .title-sec h4{
+        font-size: 1.2rem;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { 
+    .info-container{
+        height: auto;
+    }
+    .image-container>img{
+        width: 8rem;
+    }
+    .title-container{
+        padding:1rem;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .icon-arrow{
+        font-size: 1rem;
+    }
+    .title-sec{
+        line-height: 1.6rem;
+        padding: .5rem;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .title-sec>h2{
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        font-weight: 100;
+    }
+}
