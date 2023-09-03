@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <div className='skills-container' onClick={() => dispatch({type:'off'})}>
         <section className='skill-title'>
-          <h1 className='stroke-text'>All I Learned and Experienced</h1>
+          <h1 className='stroke-text'>All I Learned and Get Experienced</h1>
           <h3>Are Given Below</h3>
           <BiDownvote className='down-arrow'/>
         </section>
