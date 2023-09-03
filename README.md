@@ -75,3 +75,5 @@ React Router Fix (Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-r
 CRA Fix
 
 "build": "CI= react-scripts build", npm install react-router-dom@6
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4692d82-9408-4116-9a13-44debe156aaf/deploy-status)](https://app.netlify.com/sites/aquamarine-pixie-3fbd6b/deploys)
