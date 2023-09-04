@@ -13,7 +13,7 @@ const Info = () => {
   return (
     <div className='info-container' onClick={() => dispatch({type:'off'})}>
         <section className='image-container'>
-          <img src={gaffar} alt="my image" />
+          <img src={gaffar} alt="Abdul Gaffar" />
         </section>
         <section className='title-container'>
           <div className="title-sec">

@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="n-left">
                 <NavLink to="/">
-                    <img className="nav-img" src={image2} alt="nav image" />
+                    <img className="nav-img" src={image2} alt="icon" />
                 </NavLink>
                 <div className="toggle" onClick={() => dispatch({type:'toggle'})}>
                     {toggle ? <RxCross2 className="cross" /> : <HiSortDescending className="bars" />}

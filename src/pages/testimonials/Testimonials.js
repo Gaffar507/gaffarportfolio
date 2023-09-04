@@ -8,7 +8,7 @@ import './testimonials.css'
 const Testimonials = () => {
   const value = useGlobalContext();
   const { dispatch} = value;
-  const [ clients , setClients] = useState(testimonials);
+  const [ clients ] = useState(testimonials);
   let[index, setIndex]=useState(0);
 
   const handleClick=(type)=>{
