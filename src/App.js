@@ -1,4 +1,4 @@
-import {BrowserRouter,Link,Route,Routes,} from "react-router-dom";
+import {BrowserRouter,Route,Routes,} from "react-router-dom";
 import Skills from './pages/skills/Skills'
 import Projects from './pages/projects/Projects'
 import Testimonials from './pages/testimonials/Testimonials'

@@ -23,7 +23,3 @@ export const ContextProvider =({children})=>{
 }
 
 export const useGlobalContext=()=>useContext(myContext);
-
-// import { useGlobalContext } from '../myContext/context';
-// const value = useGlobalContext();
-// const { dispatch, toggle } = value;

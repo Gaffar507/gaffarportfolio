@@ -15,12 +15,12 @@ const Testimonials = () => {
       if (type==='next') {
         let total=index+1
         setIndex(total)
-          if (total==clients.length) {
+          if (total===clients.length) {
            setIndex(0)
           }
       }
       if (type==='previous') {
-          if (index==0) {
+          if (index===0) {
            setIndex(clients.length)
           }
           setIndex((index)=>index-1)
