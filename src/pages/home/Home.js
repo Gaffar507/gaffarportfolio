@@ -5,6 +5,7 @@ import me from '../../images/Gaffar.png'
 import gesture from '../../images/gesture.jpg'
 import web from '../../images/web.webp'
 import code from '../../images/code.jpg'
+import BoxAni from '../../components/animation/BoxAni'
 import { useGlobalContext } from '../../components/myContext/context';
 const Home = () => {
   const value = useGlobalContext();
@@ -25,6 +26,18 @@ const Home = () => {
                 <img src={web} alt="thumpsup sign" />
                 </div>
             </div>
+      </div>
+      <div className="box-animation">
+        <BoxAni height={'3rem'} width={'3rem'} animationDelay={'1s'}/>
+        <BoxAni height={'2rem'} width={'2rem'} animationDelay={'10s'}/>
+        <BoxAni height={'3.5rem'} width={'3.5rem'} animationDelay={'5s'}/>
+        <BoxAni height={'4rem'} width={'4rem'} animationDelay={'7s'}/>
+        <BoxAni height={'2.8rem'} width={'2.8rem'} animationDelay={'2s'}/>
+        <BoxAni height={'4rem'} width={'4rem'} animationDelay={'10s'}/>
+        <BoxAni height={'2rem'} width={'2rem'} animationDelay={'3s'}/>
+        <BoxAni height={'3.5rem'} width={'3.5rem'} animationDelay={'6s'}/>
+        <BoxAni height={'4rem'} width={'4rem'} animationDelay={'9s'}/>
+        <BoxAni height={'5rem'} width={'5rem'} animationDelay={'4s'}/>
       </div>
       <div className="footer">
         <Footer/>

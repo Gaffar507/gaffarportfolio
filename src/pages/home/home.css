@@ -81,6 +81,7 @@ font-family: 'Noto Sans', serif;
       margin-left: 1rem;
       margin-top: 2rem;
       padding: 1rem;
+      z-index: 1;
 }
 .right-home>h1{
       font-family: 'Lobster';
@@ -138,6 +139,13 @@ font-family: 'Noto Sans', serif;
       position: absolute;
       top: 40rem;
       width: 100%;
+}
+/* animation */
+.box-animation{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      z-index: -9;
 }
 
 /* -----MEDIA QUERIES----- */
@@ -230,7 +238,7 @@ font-family: 'Noto Sans', serif;
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media screen and (max-width:641px)  { 
       .background{
-            height: 174vh;
+            height: 181.8vh;
       }
       /* left side design */
       .left-home{
