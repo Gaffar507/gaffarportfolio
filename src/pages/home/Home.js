@@ -9,7 +9,7 @@ import BoxAni from '../../components/animation/BoxAni'
 import { useGlobalContext } from '../../components/myContext/context';
 const Home = () => {
   const value = useGlobalContext();
-  const { dispatch, toggle } = value;
+  const { dispatch} = value;
   return (
     <div className='home-container' onClick={() => dispatch({type:'off'})}>
       <div className='background'></div>
