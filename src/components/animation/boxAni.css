@@ -4,10 +4,11 @@
     0rem 0rem 3rem blue;
     border-radius: .1rem;
     animation: box-ani 10s linear infinite;
+    opacity:0;
   }
   @keyframes box-ani{
     0%{
-      opacity: 0;
+      opacity: 1;
       transform: translateY(100vh) rotate(-360deg);
     }
     30%{
