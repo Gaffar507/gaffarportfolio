@@ -1,10 +1,15 @@
-import { beach,stripe,meal,gym,aniPort,advPort,calculator,todo,recepies,store,cocktails,countTimer,movie,weather, ecommerce,slobodan, game } from "."
+import { beach,stripe,meal,gym,aniPort,advPort,calculator,todo,recepies,store,cocktails,countTimer,movie,weather, ecommerce,slobodan, game,pbs} from "."
 
 export const projects=[
     {
         title: 'Stunning Beach Resort',
         link: 'https://stunning-beach.netlify.app/',
         img: beach,
+    },
+    {
+        title: 'PBS Department',
+        link: 'https://pbs-dept.netlify.app/',
+        img: pbs
     },
     {
         title: 'Stripe Web',

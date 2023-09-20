@@ -1,3 +1,4 @@
+export { default as pbs } from '../images/projects/pbs.png';
 export { default as beach } from '../images/projects/beach-resort.png';
 export { default as stripe } from '../images/projects/stripe.png';
 export { default as meal } from '../images/projects/meal.png';
