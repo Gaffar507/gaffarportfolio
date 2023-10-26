@@ -4,8 +4,10 @@ import {FaHandHoldingUsd} from 'react-icons/fa'
 import { FaArrowTurnDown,FaGripfire } from "react-icons/fa6";
 import {FcBusinessman} from 'react-icons/fc'
 import { useGlobalContext } from '../../components/myContext/context';
+import Footer from '../../components/footer/Footer'
 import './info.css'
 import cv from '../../data/cv.docx'
+
 const Info = () => {
   const value = useGlobalContext();
   const { dispatch} = value;
@@ -33,6 +35,7 @@ const Info = () => {
             </ul>
           </div>
         </section>
+        <Footer/>
     </div>
   )
 }

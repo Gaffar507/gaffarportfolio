@@ -16,7 +16,7 @@ const Footer = () => {
         <img src={email} alt="email" />
       </div>
       <div className="right-f">
-        <p>Copyright © 2023 – All Rights Reserved.</p>
+        <p>Copyright © 2023 – All Rights Reserved by Abdul Gaffar.</p>
       </div>
     </div>
   )

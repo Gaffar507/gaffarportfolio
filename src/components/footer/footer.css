@@ -4,9 +4,9 @@
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
-    background-color: rgba(160, 160, 160, 0.328);
+    background-color: rgba(72, 72, 72, 0.557);
     color: rgb(255, 255, 255);
-    padding: .2rem .6rem;
+    padding: .3rem .6rem;
     z-index: 2;
 }
 .left-f{
@@ -48,10 +48,7 @@
 @media screen and (max-width:961px)  {  }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media screen and (max-width:641px)  {  }
-
- /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-@media screen and (max-width:481px)  {
+@media screen and (max-width:641px)  { 
     .footer-container{
         display: flex;
         align-items: center;
@@ -59,10 +56,19 @@
         justify-content: space-around;
         width: 100%;
         gap: .5rem;
-        background-color: rgba(160, 160, 160, 0.328);
         color: rgb(255, 255, 255);
-        padding: .2rem;
         z-index: 2;
+    }
+    .left-f>img{
+        width: 1.6rem;
+        padding: .2rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .footer-container{
+        padding: .2rem;
     }
     .left-f{
         flex-basis: 1;
@@ -95,22 +101,13 @@
 /* smartphones, iPhone, portrait 480x320 phones */
 @media screen and (max-width:320px)  { 
     .footer-container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
         width: 100%;
         gap: .5rem;
-        background-color: rgba(160, 160, 160, 0.328);
         color: rgb(255, 255, 255);
         padding: .2rem;
         z-index: 2;
     }
     .left-f{
-        flex-basis: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         column-gap: .8rem;
     }
     .left-f>img{
@@ -120,15 +117,7 @@
         border: 1px dotted rgb(255, 255, 255);
         padding: .2rem;
     }
-    .left-f img:hover{
-        cursor: pointer;
-        scale: 1.2;
-    }
     .right-f{
-        flex-basis: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
         font-size: .8rem;
     }
 }

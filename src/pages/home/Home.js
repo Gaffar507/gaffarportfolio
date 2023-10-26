@@ -7,7 +7,28 @@ import web from '../../images/web.webp'
 import code from '../../images/code.jpg'
 import BoxAni from '../../components/animation/BoxAni'
 import { useGlobalContext } from '../../components/myContext/context';
+import Typed from 'typed.js';
 const Home = () => {
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Web Developer.','Freelancer.', 'Web Designer.' ],
+      typeSpeed: 200,
+      loop:true,
+      backSpeed:200,
+      backDelay: 20,
+      smartBackspace:true,
+      cursorChar:'🖋️'
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   const value = useGlobalContext();
   const { dispatch} = value;
   return (
@@ -19,7 +40,7 @@ const Home = () => {
               <img src={me} alt="Mr. Gaffar" />
             </div>
             <div className="right-home">
-                <h1 className='stroke-text'>Hey, I'm A Stunning <br /> Web Developer</h1>
+                <h1 >Hey, I'm A Stunning </h1><br /> <h1><span ref={el} /></h1>
                 <p>You can get an astonishing service from me that can make your business vast. I'm extremly passionate about my job. I'm super confident that I can make precious your task and also make you beneficiary.</p>
                 <div className="right-image">
                   <img src={gesture} alt="gesture sign" />
@@ -42,7 +63,6 @@ const Home = () => {
       <div className="footer">
         <Footer/>
       </div>
- 
     </div>
   )
 }

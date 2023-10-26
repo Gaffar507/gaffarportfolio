@@ -4,13 +4,13 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Noto Sans', serif;
 */
 .home-container{
-      height:95vh ;
+      height:100vh ;
       position: relative;
 }
 .background{
       background-image: url('../../images/technical\ person.svg');
       width: 100%;
-      height: 105vh;
+      height: 104vh;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -86,35 +86,17 @@ font-family: 'Noto Sans', serif;
 .right-home>h1{
       font-family: 'Lobster';
       font-size: 4rem;
-      animation: text-style 6s forwards normal infinite ;
 }
 
-@keyframes text-style {
-  0%{
-      text-shadow: 1.1px 1.1px 1px rgba(0, 0, 0, 0);
-  }
-  20%{
-      text-shadow: 1.1px 1.1px 1px rgba(255, 132, 0, 0.834);
-  }
-  40%{
-      text-shadow: 1.1px 1.1px 1px rgba(0, 200, 255, 0);
-  }
-  60%{
-      text-shadow: 1.1px 1.1px 1px rgb(0, 34, 255);
-  }
-  80%{
-      text-shadow: 1.1px 1.1px 1px rgba(17, 255, 0, 0);
-  }
-  100%{
-      text-shadow: 1.1px 1.1px 1px rgb(43, 255, 0);
-  }
-}
 .right-home>p{
       margin-top: 1.5rem;
       letter-spacing: .05rem;
       word-spacing: .01rem;
       font-weight: normal;
-     font-family: 'Courier New', Courier, monospace;
+      font-family: 'Courier New', Courier, monospace;
+}
+.typed-cursor {
+      font-size: 2rem;
 }
 .right-image{
       margin-top: 3rem;
@@ -153,16 +135,22 @@ font-family: 'Noto Sans', serif;
 
 /* hi-res laptops and desktops */
 @media screen and (max-width:1281px) { 
-
+      /* .background{
+            height: 10%;
+      } */
  }
 
  /* big landscape tablets, laptops, and desktops */
-@media screen and (max-width:1025px) { }
+@media screen and (max-width:1025px) {
+      .background{
+            height: 112%;
+      }
+ }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media screen and (max-width:961px)  { 
       .background{
-            height: 174vh;
+            height: 182vh;
       }
       /* left side design */
       .left-home{
@@ -275,6 +263,9 @@ font-family: 'Noto Sans', serif;
       .right-home>h1{
             font-family: 'Lobster';
             font-size: 2.5rem;
+      }
+      .typed-cursor {
+            font-size: 1.5rem;
       }
       .right-home>p{
             margin-top: 1.5rem;

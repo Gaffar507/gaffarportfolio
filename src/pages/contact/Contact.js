@@ -2,6 +2,7 @@ import React,{useRef, useState} from 'react';
 import { useGlobalContext } from '../../components/myContext/context';
 import contact from '../../images/contact.svg'
 import emailjs from 'emailjs-com';
+import Footer from '../../components/footer/Footer';
 import './contact.css';
 
 const Contact = () => {
@@ -22,6 +23,8 @@ const Contact = () => {
   const value = useGlobalContext();
   const { dispatch} = value;
   return (
+    <div>
+
     <div className='contact-container' onClick={() => dispatch({type:'off'})}>
       <div className="contact-img">
         <img src={contact} alt="contact" />
@@ -42,6 +45,8 @@ const Contact = () => {
           </div>
         </form>
       </div>
+    </div>
+    <Footer/>
     </div>
   )
 }

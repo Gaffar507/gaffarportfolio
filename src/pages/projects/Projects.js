@@ -5,6 +5,7 @@ import Project from '../../components/project/Project';
 import github from '../../images/github.png'
 import {FaHandPointRight} from 'react-icons/fa'
 import { useGlobalContext } from '../../components/myContext/context';
+import Footer from '../../components/footer/Footer'
 import './projects.css';
 
 const Projects = () => {
@@ -24,6 +25,7 @@ const Projects = () => {
         <p>Would you like to know more regardings to my skills and experiences?  You can explore my Github account. </p>
         <span>Please click on this <FaHandPointRight style={{color:'blue', margin:'.6rem'}}/> <a href="https://github.com/Gaffar507?tab=repositories" target='_blank'><img className='github' src={github} alt="github link" /></a></span>
       </div>
+      <Footer/>
     </div>
   )
 }

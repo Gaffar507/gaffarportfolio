@@ -3,6 +3,7 @@ import {testimonials} from '../../data/testimonials'
 import Card from '../../components/testimonial/Card'
 import {FiArrowLeftCircle,FiArrowRightCircle} from 'react-icons/fi'
 import { useGlobalContext } from '../../components/myContext/context';
+import Footer from '../../components/footer/Footer';
 import './testimonials.css'
 
 const Testimonials = () => {
@@ -28,6 +29,8 @@ const Testimonials = () => {
   }
 
   return (
+    <div>
+      
     <div className='testimonials-container' onClick={() => dispatch({type:'off'})}>
         <h1
         > <span className='stroke-text'>What Clients</span> Say Regardings <span className='stroke-text'>to Me?</span> </h1>
@@ -43,6 +46,8 @@ const Testimonials = () => {
               <button className='right-btn btn' onClick={()=>handleClick('next')}>{<FiArrowRightCircle style={{fontSize:'2rem'}}/>}</button>
           </div>
         </div>
+    </div>
+        <Footer/>
     </div>
   )
 }
