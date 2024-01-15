@@ -1,6 +1,22 @@
-import { beach,stripe,meal,gym,aniPort,advPort,calculator,todo,recepies,store,cocktails,countTimer,movie,weather, ecommerce,slobodan, game,pbs} from "."
+import { advanture,house,landingPage,beach,stripe,meal,gym,aniPort,advPort,calculator,todo,recepies,store,cocktails,countTimer,movie,weather, ecommerce,slobodan, game,pbs} from "."
 
 export const projects=[
+    {
+        title: 'Italian Food Landing Page',
+        link: 'https://italian-food-landingpage.netlify.app/',
+        img: landingPage
+    },
+    {
+        title: 'Comphy House',
+        link: 'https://house-web.netlify.app/',
+        img: house
+    },
+
+    {
+        title: 'Travel Agency',
+        link: 'https://travel-agn.netlify.app/',
+        img: advanture
+    },
     {
         title: 'Stunning Beach Resort',
         link: 'https://stunning-beach.netlify.app/',

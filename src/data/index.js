@@ -1,3 +1,4 @@
+// projects photo
 export { default as pbs } from '../images/projects/pbs.png';
 export { default as beach } from '../images/projects/beach-resort.png';
 export { default as stripe } from '../images/projects/stripe.png';
@@ -16,6 +17,9 @@ export { default as movie } from '../images/projects/movie.png';
 export { default as slobodan } from '../images/projects/slobodan.png';
 export { default as aniPort } from '../images/projects/ani-portfolio.png';
 export { default as advPort } from '../images/projects/adv-pro.png';
+export { default as landingPage } from '../images/projects/landing-page.png';
+export { default as advanture } from '../images/projects/adventure.png';
+export { default as house } from '../images/projects/house hub.png';
 
 // testimonials photo
 export { default as david } from '../images/testimonials/img1.jpg';
