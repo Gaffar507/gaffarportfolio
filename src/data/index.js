@@ -20,6 +20,9 @@ export { default as advPort } from '../images/projects/adv-pro.png';
 export { default as landingPage } from '../images/projects/landing-page.png';
 export { default as advanture } from '../images/projects/adventure.png';
 export { default as house } from '../images/projects/house hub.png';
+export { default as dining } from '../images/projects/modern-uiux.png';
+export { default as modern_uiux } from '../images/projects/modern-uiux2.png';
+export { default as modern_business } from '../images/projects/modern-business.png';
 
 // testimonials photo
 export { default as david } from '../images/testimonials/img1.jpg';

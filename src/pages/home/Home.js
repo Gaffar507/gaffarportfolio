@@ -33,7 +33,6 @@ const Home = () => {
   const { dispatch} = value;
   return (
     <div className='home-container' onClick={() => dispatch({type:'off'})}>
-      <div className='background'></div>
       <div className="home">
             <div className="left-home">
               <img src={code} alt="code background" />
@@ -48,7 +47,7 @@ const Home = () => {
                 </div>
             </div>
       </div>
-      <div className="box-animation">
+      {/* <div className="box-animation">
         <BoxAni height={'3rem'} width={'3rem'} animationDelay={'1s'}/>
         <BoxAni height={'2rem'} width={'2rem'} animationDelay={'10s'}/>
         <BoxAni height={'3.5rem'} width={'3.5rem'} animationDelay={'5s'}/>
@@ -59,7 +58,7 @@ const Home = () => {
         <BoxAni height={'3.5rem'} width={'3.5rem'} animationDelay={'6s'}/>
         <BoxAni height={'4rem'} width={'4rem'} animationDelay={'9s'}/>
         <BoxAni height={'5rem'} width={'5rem'} animationDelay={'4s'}/>
-      </div>
+      </div> */}
       <div className="footer">
         <Footer/>
       </div>

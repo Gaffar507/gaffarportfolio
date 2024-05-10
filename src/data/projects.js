@@ -1,4 +1,4 @@
-import { advanture,house,landingPage,beach,stripe,meal,gym,aniPort,advPort,calculator,todo,recepies,store,cocktails,countTimer,movie,weather, ecommerce,slobodan, game,pbs} from "."
+import { advanture,house,landingPage,beach,stripe,meal,gym,aniPort,advPort,calculator,todo,recepies,store,cocktails,countTimer,movie,weather, ecommerce,slobodan, game,pbs, dining, modern_uiux, modern_business} from "."
 
 export const projects=[
     {
@@ -11,17 +11,32 @@ export const projects=[
         link: 'https://house-web.netlify.app/',
         img: house
     },
-
     {
-        title: 'Travel Agency',
-        link: 'https://travel-agn.netlify.app/',
-        img: advanture
+        title: 'Modern Dining Restaurant',
+        link: 'https://modern-uiux-restaurant.netlify.app/',
+        img: dining
+    },
+    {
+        title: 'Modern Ui/Ux',
+        link: 'https://modern-ui-ux-web.netlify.app/',
+        img: modern_uiux
     },
     {
         title: 'Stunning Beach Resort',
         link: 'https://stunning-beach.netlify.app/',
         img: beach,
     },
+    {
+        title: 'Modern Business Web',
+        link: 'https://modern-business-uiux.netlify.app/',
+        img: modern_business
+    },
+    {
+        title: 'Travel Agency',
+        link: 'https://travel-agn.netlify.app/',
+        img: advanture
+    },
+
     {
         title: 'PBS Department',
         link: 'https://pbs-dept.netlify.app/',

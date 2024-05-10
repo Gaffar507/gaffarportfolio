@@ -13,6 +13,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Navbar/>
+      {/* <Home/>
+      <Info/>
+      <Skills/>
+      <Projects/>
+      <Testimonials/>
+      <Contact/> */}
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/my-info' element={<Info/>}/>

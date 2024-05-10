@@ -3,27 +3,13 @@
 font-family: 'Roboto Slab', serif; 
 font-family: 'Noto Sans', serif;
 */
+
 .home-container{
-      height:100vh ;
+      height:104vh ;
       position: relative;
+      background-color: rgba(34, 34, 34, 0.251);
 }
-.background{
-      background-image:linear-gradient(rgba(0, 0, 0, 0.167) 50%, rgba(0, 0, 0, 0.16)), url('../../images/technical\ person.svg');
-      width: 100%;
-      height: 104vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      object-fit: cover;
-      position: absolute;
-}  
-/* .background::after{
-      position: absolute;
-      content: '';
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.326);
-} */
+
 .home{
       display: flex;
       align-items: center;
@@ -86,14 +72,19 @@ font-family: 'Noto Sans', serif;
 .right-home>h1{
       font-family: 'Lobster';
       font-size: 4rem;
+      text-shadow: 1px 1px 1px black;
 }
 
 .right-home>p{
+      font-family: 'Courier New', Courier, monospace;
       margin-top: 1.5rem;
+      font-size: 1.1rem;
       letter-spacing: .05rem;
       word-spacing: .01rem;
-      font-weight: normal;
-      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      padding: .5rem;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.655);
+      color: rgb(254, 255, 255);
 }
 .typed-cursor {
       font-size: 2rem;
@@ -137,36 +128,19 @@ font-family: 'Noto Sans', serif;
 @media screen and (max-width:1281px) { 
 
  }
- @media screen and (max-width:1270px) { 
-      .background{
-            height: 112vh;
-      }
- }
- @media screen and (max-width:1200px) { 
-      .background{
-            height: 112vh;
-      }
- }
+
 
  /* big landscape tablets, laptops, and desktops */
 @media screen and (max-width:1025px) {
       .home-container{
             height:auto ;
       }
-      .background{
-            height: 108.4vh;
-      }
  }
  @media screen and (max-width:1000px) { 
-      .background{
-            height: 112vh;
-      }
+
  }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media screen and (max-width:961px)  {
-      .background{
-            height: 182vh;
-      }
       /* left side design */
       .left-home{
             flex-basis: 100%;
@@ -237,51 +211,9 @@ font-family: 'Noto Sans', serif;
             width: 100%;
       }
  }
- @media screen and (max-width:914px) {
-       .background{
-             height: 182vh;
-            }
-      }
-@media screen and (max-width:913px) {
-           .background{
-                 height: 76vh;
-           }
-}
-@media screen and (max-width:911px) {
-      .background{
-            height: 182vh;
-      }
-}
-      @media screen and (max-width:821px) {
-      .background{
-            height: 88vh;
-      }
- }
- @media screen and (max-width:813px) {
-      .background{
-            height: 88vh;
-      }
- }
- @media screen and (max-width:800px) {
-      .background{
-            height: 181.5vh;
-      }
- }
- @media screen and (max-width:770px) {
-      .background{
-            height: 101.4vh;
-      }
- }
- @media screen and (max-width:768px) {
-      .background{
-            height: 181.5vh;
-      }
- }
+
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media screen and (max-width:641px)  { 
-      .background{
-            height: 181.8vh;
-      }
       /* left side design */
       .left-home{
             flex-basis: 100%;
@@ -355,33 +287,9 @@ font-family: 'Noto Sans', serif;
             width: 100%;
       }
  }
- @media screen and (max-width:600px)  { 
-      .background{
-            height:182vh;
-      }
- }
- @media screen and (max-width:541px)  { 
-      .background{
-            height:184.5vh;
-      }
- }
- @media screen and (max-width:520px)  { 
-      .background{
-            height:144.5vh;
-      }
- }
- @media screen and (max-width:500px)  { 
-      .background{
-            height:181.5vh;
-      }
- }
+
  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 @media screen and (max-width:481px)  {
-      .background{
-            background-image: url('../../images/technical\ person.svg');
-            width: 100%;
-            height: 120vh;
-      }
       /* left side design */
       .left-home{
             flex-basis: 100%;
@@ -453,42 +361,8 @@ font-family: 'Noto Sans', serif;
       }
  }
 
- /* random phone */
- @media screen and (max-width:450px)  { 
-      .background{
-            height:107vh;
-      }
- }
- @media screen and (max-width:430px)  { 
-      .background{
-            height:105vh;
-      }
- }
- @media screen and (max-width:410px)  { 
-      .background{
-            height:114vh;
-      }
- }
- @media screen and (max-width:394px)  { 
-      .background{
-            height:113vh;
-      }
- }
- @media screen and (max-width:360px)  { 
-      .background{
-            height:130vh;
-      }
- }
- @media screen and (max-width:340px)  { 
-      .background{
-            height:150vh;
-      }
- }
 /* smartphones, iPhone, portrait 480x320 phones */
 @media screen and (max-width:320px)  { 
-      .background{
-            height:150vh;
-      }
       .home-container{
             height:auto;
             position: relative;
@@ -496,7 +370,7 @@ font-family: 'Noto Sans', serif;
       .background{
             background-image: url('../../images/technical\ person.svg');
             width: 100%;
-            height: 130vh;
+            height: auto;
       }
       .home{
             display: flex;
@@ -575,8 +449,3 @@ font-family: 'Noto Sans', serif;
             width: 100%;
       }
 }
-@media screen and (max-width:300px)  {
-      .background{
-            height:130vh;
-      }
- }
